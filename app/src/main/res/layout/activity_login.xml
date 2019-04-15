@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/lib/br.com.droidsoft.cleanflying"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B09C84"
+    tools:context="br.com.onder.cleanflyingos.LoginActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Ler código do crachá"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app2:layout_constraintHorizontal_bias="0.503"
+        app2:layout_constraintLeft_toLeftOf="parent"
+        app2:layout_constraintRight_toRightOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="scanQR"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintLeft_toLeftOf="parent"
+        app2:layout_constraintRight_toRightOf="parent"
+        app2:layout_constraintTop_toBottomOf="@+id/textView2"
+        app2:srcCompat="@drawable/idcarddois" />
+
+</android.support.constraint.ConstraintLayout>

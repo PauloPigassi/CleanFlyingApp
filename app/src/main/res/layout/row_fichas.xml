@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="1dp"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+
+            <LinearLayout
+                android:id="@+id/ll_satusnucleo"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#f75757"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_row_prefixo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="65dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView8"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_weight="1"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/play" />
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/tv_row_data_inicio"-->
+                                <!--android:layout_width="19dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_weight="2"-->
+                                <!--android:text="00/00/0000"-->
+                                <!--android:textColor="#000000"-->
+                                <!--android:textSize="10sp" />-->
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/tv_row_hora_inicio"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_weight="2"-->
+                                <!--android:text="00:00"-->
+                                <!--android:textColor="#000000"-->
+                                <!--android:textSize="10sp" />-->
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="52dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:scaleType="fitStart"
+                                app:srcCompat="@drawable/complete" />
+
+                            <TextView
+                                android:id="@+id/tv_row_data_termino"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="00/00/0000"
+                                android:textColor="#000000"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/tv_row_hora_termino"
+                                android:layout_width="63dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="00:00"
+                                android:textColor="#000000"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_row_modelo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+
+                    <TextView
+                        android:id="@+id/tv_row_cliente"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="teste"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"></LinearLayout>
+
+</LinearLayout>

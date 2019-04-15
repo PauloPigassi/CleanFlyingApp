@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "br.com.onder.cleanflyingos"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 4
+        versionName "4.0"
+        useLibrary 'org.apache.http.legacy'
+
+    }
+    buildTypes {
+        debug {
+            debuggable true
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+
+        checkReleaseBuilds false
+
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //implementation 'com.android.support:appcompat-v7:25.3.1'
+    implementation 'com.android.support:appcompat-v7:26.0.0'
+    //implementation 'com.android.support:recyclerview-v7:25.3.1'
+    implementation 'com.android.support:recyclerview-v7:26.0.0'
+    implementation 'com.google.android.gms:play-services-appindexing:8.1.0'
+    //implementation 'com.android.support:cardview-v7:25.3.1'
+    implementation 'com.android.support:cardview-v7:26.0.0'
+    implementation 'org.apache.httpcomponents:httpclient-android:4.3.5.1'
+
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.journeyapps:zxing-android-embedded:3.3.0'
+    testImplementation 'junit:junit:4.12'
+}
